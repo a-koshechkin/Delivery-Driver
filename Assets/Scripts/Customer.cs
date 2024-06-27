@@ -7,7 +7,7 @@ public class Customer : MonoBehaviour
 {
     #region Fields
 
-    private readonly float _customerReloadTime = 2f;
+    private readonly float _customerReloadTime = 0.2f;
     private Color _receivedPackage = Color.black;
 
     #endregion
@@ -16,7 +16,7 @@ public class Customer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision != null && collision.CompareTag(Tags[Tag.Player]))
+        if (collision != null && collision.CompareTag(Tags[Tag.Driver]))
         {
             GetComponent<Collider2D>().enabled = false;
             DeliverPackage();

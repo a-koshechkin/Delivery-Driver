@@ -6,7 +6,7 @@ public class Package : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision != null && collision.CompareTag("Driver"))
+        if (collision != null && collision.CompareTag(Constants.Tags[Constants.Tag.Driver]))
         {
             GetComponent<Collider2D>().enabled = false;
             PickUpThePackage();

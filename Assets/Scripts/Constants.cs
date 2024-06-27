@@ -4,14 +4,14 @@ public static class Constants
 {
     public enum Tag
     {
-        Player,
+        Driver,
         SpeedUp,
         SlowDown
     }
 
     public static readonly Dictionary<Tag, string> Tags = new()
     {
-        {Tag.Player, "Player"},
+        {Tag.Driver, "Driver"},
         {Tag.SpeedUp, "SpeedUp"},
         {Tag.SlowDown, "SlowDown"}
     };
